@@ -93,7 +93,7 @@ body{
     background-color: var(--body-color);
     color: var(--header-footet-color);
     font-size: 1em;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
 }
 .boka-btn:hover{
@@ -119,6 +119,57 @@ body{
     border-radius: 0.5em;
     flex: 1 1 45%;
 }
+h2{
+    color: var(--header-footet-color);
+    margin-bottom: 0.5em;
+    text-decoration: underline;
+}
+
+.sem-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.seminarium {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    border: 2px solid var(--header-footet-color);
+    border-radius: 0.5em;
+    text-align: center;
+}
+.sem-title{
+    color: var(--header-footet-color);
+    text-decoration: underline;
+    padding: 0.4em;
+}
+.sem-text{
+    padding: 0.4em;
+    color:var(--header-footet-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     display: flex;
