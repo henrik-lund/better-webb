@@ -5,13 +5,15 @@
 }
 :root{
     --header-footet-color:#122B42;
-    --body-color: #d9d9d9;
+    --body-color: #b5b5b5;
 }
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #d9d9d9;
+    background-color: var(--body-color);
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -25,6 +27,7 @@ body{
     height: auto;
 }
 .logo{
+    justify-content: center;
     width: 100%;
     max-width: 350px;
     margin-top: 1em;
@@ -32,16 +35,14 @@ body{
 }
 
 .nav{
-    display: flex;
     justify-content: space-between;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 .nav-btn{
-    display: flex;
-    flex-shrink: 1;
+    justify-content: center;
     padding: 1em;
-    margin-right: 1em;
+    /* margin-right: 1em; */
     border-radius: 0.5em;
     background-color: var(--body-color);
     color: var(--header-footet-color);
@@ -57,16 +58,20 @@ body{
 }
 .cards{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 2em;
 }
 .cards .wrapper{
-    /* max-width: 1000px; */
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
 }
 .cards .wrapper .card {
     max-width: 1000px;
+    height: auto;
     display: flex;
     flex-direction: column;
     color: rgb(14, 14, 14);
@@ -77,6 +82,71 @@ body{
 }
 .hero-image{
     width: 100%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin-bottom: 0.5em;
 }
+.boka-btn{
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    background-color: var(--body-color);
+    color: var(--header-footet-color);
+    font-size: 1em;
+    text-decoration-line: underline;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+}
+.boka-btn:hover{
+    background-color: var(--header-footet-color);
+    color: var(--body-color);
+    cursor: pointer;
+    box-shadow:0 8px 16px 0 rgba(253, 253, 253, 0.6)
+}
+
+.conf-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.conf-image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    flex: 1 1 45%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    background-color: var(--header-footet-color);
+    color: var(--body-color);
+    justify-content: center;
+    align-items: center;
+}
+.footer-links{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.footer-links .foot-nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links .foot-nav .link{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+ .sociala-medier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
