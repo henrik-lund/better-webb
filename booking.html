@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bättre Webb</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="booking.css">
 </head>
@@ -12,14 +12,89 @@
         <img src="images/logo2.png" alt="" class="logo">
             <nav class="nav">
                <a href="#"><button class="nav-btn">Kontakta oss</button></a> 
-                <a href="#"><button class="nav-btn">Hjälp</button></a>
+                <a href="#"><button class="nav-btn">Om oss</button></a>
             </nav>
     </header>
 
     <main>
+        <h1>Boka din plats på Bättre Webb 2025!</h1>
         <form action="#">
-            
+            <p>* Obligatorisk</p>
+            <div class="form-field">
+                <label for="name">Namn *:</label>
+                <input type="text" id="name" required placeholder="Ditt namn">
+            </div>
+            <div class="form-field">
+                <label for="email">E-post *:</label>
+                <input type="email" id="email" required placeholder="Exempel din@epost.se">
+            </div>
+            <div class="form-field">
+                <label for="adress">Adress *</label>
+                <input type="text" id="adress" required placeholder="Din adress">
+            </div>
+            <div class="form-field">
+                <label for="telefonnummer">Telefonnummer *</label>
+                <input type="tel" id="telefonnummer" required placeholder="Exempel 070-123 45 67">
+            </div>
+            <div class="form-field">
+                <legend>Vilken dag vill du besöka konferensen</legend>
+                <div class="toggle-group">
+                    <label class="toggle">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                    <span class="label-text">17/10</span>
+                </label>
+
+                <label class="toggle">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                    <span class="label-text">18/10</span>
+                </label>
+
+                <label class="toggle">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                    <span class="label-text">19/10</span>
+                </label>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="">Vad vill du äta?</label>
+                <input type="text" id="datalist" list="mat" placeholder="Välj ett alternativ">
+                <datalist id="mat">
+                    <option>Kött</option>
+                    <option>Fisk</option>
+                    <option>Vegetarisk</option>
+                </datalist>
+            </div>
+            <div class="form-field">
+                <label for="allergi"></label>
+                <textarea name="" id="allergi" rows="5" placeholder="Ange dina allergier"></textarea>
+            </div>
+            <button type="submit" class="cta">Säkra din plats!</button>
+            <button type="reset" class="reset">Avbryt</button>
+
         </form>
     </main>
+
+    <footer class="footer">
+            <div class="footer-links">
+                <nav class="foot-nav">
+                    <a href="#" class="link">Om oss</a>
+                    <a href="#" class="link">Kontakta oss</a>
+                </nav>
+                <article>
+                    <p>Mässans gata 24 </p>
+                    <p>412 51 Göteborg</p>
+                </article>
+                <!-- <article class="sociala-medier">
+                    <div class="ikoner">
+                        <img src="" alt="Twitter">
+                        <img src="" alt="Instagram">
+                        <img src="" alt="Facebook">
+                    </div>
+                </article> -->
+            </div>
+        </footer>
 </body>
 </html>

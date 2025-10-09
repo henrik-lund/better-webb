@@ -1,0 +1,129 @@
+h1{
+    text-align: center;
+    color: var(--header-footet-color);
+    text-decoration: underline;
+    margin-top: 1em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    gap: 1em;
+    border: 2px solid var(--header-footet-color);
+    border-radius: 0.5em;
+    padding: 1em;
+    background-color: beige;
+    box-shadow: 1em 1em 2em rgb(145, 144, 144);
+
+
+    p{
+    color: red;
+}
+ 
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5em 0;
+    gap: 0.5em;
+}
+input, select, textarea{
+    padding: 0.5em;
+    border: 1px solid var(--header-footet-color);
+    border-radius: 0.3em;
+    font-size: 1em;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: 4px solid rgba(0, 255, 255, 0.285);
+}
+label ,legend{
+    font-weight: bold;
+    color: var(--header-footet-color);
+}
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: #122B42;
+  font-weight: 500;
+}
+
+.toggle input {
+  display: none;
+}
+.slider {
+  position: relative;
+  width: 46px;
+  height: 24px;
+  background-color: #b5b5b5;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.toggle input:checked + .slider {
+  background-color: #122B42;
+}
+
+.toggle input:checked + .slider::after {
+  transform: translateX(22px);
+}
+
+.cta{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: var(--header-footet-color);
+    color: white;
+    font-size: 1em;
+    text-decoration-line: none;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+     transition: background-color linear 0.2s;
+
+    &:hover{
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 4px 0 rgba(214, 213, 213, 0.6);
+    background-color: green;
+}
+    
+}
+.reset{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: white;
+    color: var(--header-footet-color);
+    font-size: 1em;
+    text-decoration-line: none;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+   transition: background-color linear 0.2s;
+
+    &:hover{
+    background-color: rgba(193, 14, 14, 0.897);
+    color: white;
+    cursor: pointer;
+    box-shadow:0 8px 16px 0 rgba(3, 3, 3, 0.6)}
+}
