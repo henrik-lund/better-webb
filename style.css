@@ -5,7 +5,7 @@
 }
 :root{
     --header-footet-color:#122B42;
-    --body-color: #b5b5b5;
+    --body-color: #f1f1f1;
 }
 body{
     height: 100vh;
@@ -180,6 +180,10 @@ h2{
     .dag{
        padding: 0.5em;
     }
+}
+.footer{
+    display: flex;
+    flex-direction: row;
 }
 
 
