@@ -24,7 +24,6 @@ body{
     background-color: var(--header-footer-color);
     width: 100%;
     height: auto;
-    
 }
 .logo{
     justify-content: center;
@@ -43,7 +42,6 @@ body{
 .nav-btn{
     justify-content: center;
     padding: 1em;
-    /* margin-right: 1em; */
     border-radius: 0.5em;
     background-color: beige;
     color: var(--header-footer-color);
@@ -64,16 +62,12 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 2em;
-    
 }
-
 
 .cards .wrapper{
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    
-    /* justify-content: space-between; */
 }
 .cards .wrapper .card {
     max-width: 1000px;
@@ -85,29 +79,34 @@ body{
     border: 2px solid var(--header-footer-color);
     border-radius: 0.5em;
     text-align: center;
+    background-color: beige;
+    box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.3);
+    margin-top: 2em;
+
+    &:hover{
+        box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
+    }
 }
 .hero-image{
     width: 100%;
-    /* max-width: 1000px; */
     margin-bottom: 0.5em;
-    
 }
 .boka-btn{
     padding: 0.5em;
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 0.5em;
-    background-color: beige;
-    color: var(--header-footer-color);
+    background-color: var(--header-footer-color);
+    color: white;
     font-size: 1em;
     text-decoration-line: none;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    box-shadow:0.5em 0.5em 1em rgba(0,0,0,0.3);
 }
 .boka-btn:hover{
     background-color: var(--header-footer-color);
     color:white;
     cursor: pointer;
-    box-shadow:0 8px 16px 0 rgba(253, 253, 253, 0.6);
+    box-shadow:0.5em 0.5em 1em rgba(0, 0, 0, 0.604);
 }
 
 .conf-image-container{
@@ -125,6 +124,10 @@ body{
     margin-bottom: 0.5em;
     border-radius: 0.5em;
     flex: 1 1 45%;
+
+    &:hover{
+        box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
+    }
 }
 h2{
     color: var(--header-footer-color);
@@ -138,6 +141,8 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 2em;
+
+  
 }
 .seminarium {
     max-width: 1000px;
@@ -150,6 +155,10 @@ h2{
     text-align: center;
     background-color: beige;
     box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.3);
+      
+    &:hover{
+        box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
+    }
 }
 .sem-title{
     color: var(--header-footer-color);
@@ -167,6 +176,10 @@ h2{
     padding: 1em;
     margin-bottom: 2.5em;
     box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.3);
+
+      &:hover{
+        box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
+    }
 
     h2{
         text-align: center;
@@ -190,19 +203,22 @@ h2{
     margin: 1em 0 0 0;
 }
 .footer-links{
-    max-width: 1000px;
+    /* max-width: 1000px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
 }
-.footer-links .foot-nav{
+.footer-links .foot-nav .link{
     display: flex;
     flex-direction: column;
-}
-.footer-links .foot-nav .link{
     color: white;
     text-decoration: none;
     margin-bottom: 0.5em;
+    font-size: larger;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
  
 

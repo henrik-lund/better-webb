@@ -60,6 +60,10 @@ label ,legend{
   font-family: sans-serif;
   color: #122B42;
   font-weight: 500;
+
+  p{
+    color: var(--header-footer-color)
+  }
 }
 
 .toggle input {
@@ -135,7 +139,7 @@ input:valid{
   border: 3px solid;
   border-color: green;
 }
-form:invalid .cta {
+/* form:invalid .cta {
   opacity: 0.3;
   pointer-events: none;
-}
+} */
