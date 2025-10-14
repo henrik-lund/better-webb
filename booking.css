@@ -3,6 +3,7 @@ h1{
     color: var(--header-footer-color);
     text-decoration: underline;
     margin-top: 1em;
+    text-shadow: #9b9c9d 0.1em 0.1em 0.2em;
 }
 
 form{
@@ -35,7 +36,7 @@ form{
 input, select, textarea{
     padding: 0.5em;
     border: 1px solid var(--header-footer-color);
-    border-radius: 0.3em;
+    border-radius: 1em;
     font-size: 1em;
 }
 input:focus, select:focus, textarea:focus, button:focus {

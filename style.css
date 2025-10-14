@@ -9,6 +9,7 @@
 }
 body{
     height: 100vh;
+    background-image: url(images/bakgrund.png);
     background-color: var(--body-color);
     font-family: sans-serif;
     display: flex;
