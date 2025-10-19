@@ -8,6 +8,7 @@
     --body-color: #f1f1f1;
 }
 body{
+    width: 100%;
     height: 100vh;
     background-image: url(images/bakgrund.png);
     background-color: var(--body-color);
@@ -16,11 +17,17 @@ body{
     flex-direction: column;
     
 }
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 .header-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: var(--header-footer-color);
     width: 100%;
@@ -41,13 +48,11 @@ body{
     margin-bottom: 1em;
 }
 .nav-btn{
-    justify-content: center;
     padding: 1em;
     border-radius: 0.5em;
     background-color: beige;
     color: var(--header-footer-color);
     font-size: 1em;
-    text-decoration-line: underline;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
 }
 .nav-btn:hover{
@@ -60,7 +65,6 @@ body{
 .cards{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 2em;
 }
@@ -80,7 +84,7 @@ body{
     border: 2px solid var(--header-footer-color);
     border-radius: 0.5em;
     text-align: center;
-    background-color: beige;
+    background-color: white;
     box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.3);
     margin-top: 2em;
 
@@ -130,7 +134,7 @@ body{
         box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
     }
 }
-h2{
+h1{
     color: var(--header-footer-color);
     margin-bottom: 0.5em;
     text-decoration: underline;
@@ -139,26 +143,39 @@ h2{
 .sem-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-bottom: 2em;
-
-  
 }
 .seminarium {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    /* gap: 1em; */
     border: 2px solid var(--header-footer-color);
     border-radius: 0.5em;
     text-align: center;
     background-color: beige;
     box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.3);
+    margin-bottom: 1em;
       
     &:hover{
         box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
+    }
+}
+
+.sem-box{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.2);
+
+    &:hover{
+        box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.616);
     }
 }
 .sem-title{
@@ -170,6 +187,13 @@ h2{
     padding: 0.4em;
     color:var(--header-footer-color);
 }
+h2 , h3{
+    text-align: center;
+    color: var(--header-footer-color);
+    text-decoration: underline;
+}
+
+
 .kalender{
     background-color: beige;
     border: 2px solid var(--header-footer-color);
@@ -178,12 +202,16 @@ h2{
     margin-bottom: 2.5em;
     box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.3);
 
-      &:hover{
+    &:hover{
         box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
     }
-
-    h2{
-        text-align: center;
+    h3{
+        font-size: x-large;
+        color: var(--header-footer-color);
+    }
+    h4{
+        font-size: large;
+        margin-bottom: 0.5em;
     }
 
     .dag-rubrik{
@@ -193,23 +221,33 @@ h2{
         text-align: center;
     }
     .dag{
-       padding: 0.5em;
+    padding: 0.5em;
+    }
+
+    .dagar{
+        padding: 1.5em;
+        color: var(--header-footer-color);
+        margin-bottom: 1em;
+        padding: 0.5em;
+        border-radius: 0.5em;
     }
 }
 .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     height: auto;
+    width: 100%;
     color: white;
     background-color: var(--header-footer-color);
     padding: 2em 1em;
     margin: 1em 0 0 0;
+
+    bottom: 0;
 }
-.footer-links{
-    /* max-width: 1000px; */
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-}
-.footer-links .foot-nav .link{
+
+.foot-nav .link{
     display: flex;
     flex-direction: column;
     color: white;
@@ -221,7 +259,7 @@ h2{
         text-decoration: underline;
     }
 }
- 
+
 
 
 

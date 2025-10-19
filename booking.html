@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bättre Webb</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <header class="header-container">
-        <a href="index.html"><img src="images/logo2.png" alt="" class="logo"></a>
+    <header class="header-container">
+        <a href="index.html"><img src="images/logo2.png" alt="Bättre webb logo" class="logo"></a>
             <nav class="nav">
-               <a href="#"><button class="nav-btn">Kontakta oss</button></a> 
+                <a href="#"><button class="nav-btn">Kontakta oss</button></a> 
                 <a href="#"><button class="nav-btn">Om oss</button></a>
             </nav>
     </header>
@@ -20,24 +20,29 @@
         <h1>Säkra din plats på Bättre Webb 2025!</h1>
         <form action="#">
             <p>* Obligatorisk</p>
+
             <div class="form-field">
                 <label for="name">Namn *:</label>
                 <input type="text" id="name" required placeholder="Ditt namn">
             </div>
+
             <div class="form-field">
                 <label for="email">E-post *:</label>
-                <input type="email" id="email" required placeholder="Exempel din@epost.se">
+                <input type="email" id="email" required placeholder="din@epost.se">
             </div>
+
             <div class="form-field">
-                <label for="adress">Adress *</label>
+                <label for="adress">Adress *:</label>
                 <input type="text" id="adress" required placeholder="Din adress">
             </div>
+
             <div class="form-field">
                 <label for="telefonnummer">Telefonnummer</label>
-                <input type="tel" id="telefonnummer" placeholder="Exempel 070-123 45 67">
+                <input type="tel" id="telefonnummer" placeholder="070-123 45 67">
             </div>
+
             <div class="form-field">
-                <legend>Vilken dag vill du besöka konferensen</legend>
+                <legend>Vilken dag vill du besöka konferensen? *</legend>
                 <div class="toggle-group">
                     <label class="toggle">
                     <input type="checkbox">
@@ -58,15 +63,25 @@
                 </label>
                 </div>
             </div>
+
             <div class="form-field">
-                <label for="">Vad vill du äta?</label>
-                <input type="text" id="datalist" list="mat" placeholder="Välj ett alternativ" required>
-                <datalist id="mat">
-                    <option>Kött</option>
-                    <option>Fisk</option>
-                    <option>Vegetarisk</option>
-                </datalist>
+                <legend>Vad vill du äta?</legend>
+                <div class="flex-radio">
+                    <div class="radio-container">
+                        <input id="meat" type="radio" name="food">
+                        <label for="meat" class="radio">Kött</label>
+                    </div>
+                    <div class="radio-container">
+                        <input id="fisk" type="radio" name="food">
+                        <label for="fisk" class="radio">Fisk</label>
+                    </div>
+                    <div class="radio-container">
+                        <input id="veg" type="radio" name="food">
+                        <label for="veg" class="radio">Vegetarisk</label>
+                    </div>
+                </div>
             </div>
+
             <div class="form-field">
                 <label for="allergi"></label>
                 <textarea name="" id="allergi" rows="5" placeholder="Ange dina allergier"></textarea>
@@ -78,16 +93,14 @@
     </main>
 
     <footer class="footer">
-            <div class="footer-links">
-                <nav class="foot-nav">
-                    <a href="#" class="link">Om oss</a>
-                    <a href="#" class="link">Kontakta oss</a>
-                </nav>
-                <section class="adress">
-                    <p>Mässans gata 24</p>
-                    <p>412 51 Göteborg</p>
-                </section>
-            </div>
-        </footer>
+        <nav class="foot-nav">
+            <a href="#" class="link">Om oss</a>
+            <a href="#" class="link">Kontakta oss</a>
+        </nav>
+        <section class="adress">
+            <p>Mässans gata 24</p>
+            <p>412 51 Göteborg</p>
+        </section>
+</footer>
 </body>
 </html>

@@ -9,8 +9,8 @@ h1{
 form{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 50em;
+    width: 90%;
     margin-bottom: 2em;
     margin-top: 2em;
     gap: 1em;
@@ -20,11 +20,9 @@ form{
     background-color: beige;
     box-shadow: 1em 1em 2em rgb(145, 144, 144);
 
-
     p{
     color: red;
 }
- 
 }
 .form-field{
     display: flex;
@@ -38,8 +36,13 @@ input, select, textarea{
     border: 1px solid var(--header-footer-color);
     border-radius: 1em;
     font-size: 1em;
+
+    &:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    }
 }
-input:focus, select:focus, textarea:focus, button:focus {
+input:focus, select:focus, textarea:focus, button:focus .radio-container:focus{
     outline: 4px solid rgba(0, 255, 255, 0.285);
 }
 label ,legend{
@@ -98,6 +101,31 @@ label ,legend{
   transform: translateX(22px);
 }
 
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+.radio{
+    font-weight: normal;
+}
+
+.radio-container{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+
+    *:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.flex-radio{
+    display: flex;
+    gap: 5em;
+    flex-wrap: wrap;}
+
 .cta{
     padding: 0.5em;
     border-radius: 0.5em;
@@ -106,7 +134,7 @@ label ,legend{
     font-size: 1em;
     text-decoration-line: none;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
-     transition: background-color linear 0.2s;
+    transition: background-color linear 0.2s;
 
     &:hover{
     color: white;
@@ -124,7 +152,7 @@ label ,legend{
     font-size: 1em;
     text-decoration-line: none;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
-   transition: background-color linear 0.2s;
+    transition: background-color linear 0.2s;
 
     &:hover{
     background-color: rgba(193, 14, 14, 0.897);
