@@ -41,27 +41,6 @@ main{
     margin-bottom: 1em;
 }
 
-
-.nav{
-    justify-content: space-between;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-.nav-btn{
-    padding: 1em;
-    border-radius: 0.5em;
-    background-color: beige;
-    color: var(--header-footer-color);
-    font-size: 1em;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
-}
-.nav-btn:hover{
-    background-color: var(--header-footer-color);
-    color: white;
-    cursor: pointer;
-    box-shadow:0 8px 16px 0 rgba(253, 253, 253, 0.6);
-}
-
 .cards{
     display: flex;
     flex-direction: column;
