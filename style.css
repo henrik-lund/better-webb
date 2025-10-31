@@ -101,6 +101,10 @@ main{
     margin-bottom: 2em;
     width: 100%;
 }
+@keyframes scaleUp  {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
 .conf-image{
     width: 100%;
     max-width: 600px;
@@ -108,11 +112,15 @@ main{
     margin-bottom: 0.5em;
     border-radius: 0.5em;
     flex: 1 1 45%;
+    
 
     &:hover{
-        box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.616);
+        animation: scaleUp 0.5s forwards;
     }
+
 }
+
+
 h1{
     color: var(--header-footer-color);
     margin-bottom: 0.5em;
